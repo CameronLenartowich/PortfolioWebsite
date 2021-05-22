@@ -1,6 +1,11 @@
 import React from 'react'
 import '../styles/App.css';
 import firebase from 'firebase/app';
+import {
+  BrowserRouter as Router,
+} from "react-router-dom";
+import Navbar from './Navbar'
+import Routes from './Routes'
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_API_KEY,
@@ -15,11 +20,12 @@ firebase.initializeApp(firebaseConfig);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Under Maintenance</h1>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar/>
+        <Routes/>
+      </div>
+    </Router>
   );
 }
 

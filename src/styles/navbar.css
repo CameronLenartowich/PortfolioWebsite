@@ -1,0 +1,19 @@
+@media only screen and (max-width: 899px) {
+    #largeNavMenu {
+        visibility: hidden;
+    }
+    
+    #smallNavMenu {
+      visibility: visible;
+    }
+  }
+  
+  @media only screen and (min-width: 900px) {
+    #largeNavMenu {
+        visibility: visible;
+    }
+  
+    #smallNavMenu {
+      visibility: hidden;
+    }
+  }
