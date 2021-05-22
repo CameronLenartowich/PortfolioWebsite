@@ -6,9 +6,9 @@ import {work} from './workContents'
 import '../styles/work.css'
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
+import Container from '@material-ui/core/Container';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     textAlign: 'center',
     color: theme.palette.text.secondary,
+    margin: theme.spacing(2)
   },
 }));
 
@@ -26,13 +27,14 @@ export default function Work() {
 
   return (
     <div className={classes.root}>
+      <Container maxWidth="lg">
       <Paper className={classes.paper}>
         <h2>Hilton Worldwide Holdings</h2>
         <p>
           I currently work for Hilton Worldwide Holdings as a full-stack web developer.
           My role is to rebuild their legacy web applications with modern day technologies and clean code.
           The web applications are large in size of both data and amount of web pages.
-          The application's are available to employees only so the link's are inaccessed by the public network.
+          The web application's are available to employees only so the websites are innaccessed by the public network.
           Technologies that I use to build the web applications are:
         </p>
         <Grid container spacing={3}>
@@ -76,8 +78,6 @@ export default function Work() {
         </Grid>
       </Paper>
 
-      <Divider />
-
       <Paper className={classes.paper}>
       <h2>Thinkful</h2>
       <p>
@@ -88,7 +88,10 @@ export default function Work() {
           work.thinkful.map((value, index) => (
             <Grid item xs={6} key={index}>
               <Paper className={classes.paper}>
-                <a href={value.link}>
+                <a 
+                  href={value.link}
+                  target="_blank"
+                >
                   <img 
                     className="workImage" 
                     src={value.image} 
@@ -101,8 +104,6 @@ export default function Work() {
         }
       </Grid>
       </Paper>
-
-      <Divider/>
 
       <Paper className={classes.paper}>
       <h2>Brookfield Septic</h2>
@@ -115,7 +116,10 @@ export default function Work() {
           work.brookfieldSeptic.map((value, index) => (
             <Grid item xs={6} key={index}>
               <Paper className={classes.paper}>
-                <a href={value.link}>
+                <a 
+                  href={value.link}
+                  target="_blank"
+                >
                   <img 
                     className="workImage" 
                     src={value.image} 
@@ -128,6 +132,7 @@ export default function Work() {
         }
       </Grid>
       </Paper>
+      </Container>
     </div>
   );
 }

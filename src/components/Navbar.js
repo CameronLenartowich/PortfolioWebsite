@@ -20,6 +20,10 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     marginLeft: theme.spacing(2)
   },
+  link: {
+    color: 'white',
+    textDecoration: 'none'
+  }
 }));
 
 export default function Navbar() {
@@ -37,16 +41,23 @@ export default function Navbar() {
             Cameron Lenartowich
           </Typography>
           <div id="largeNavMenu">
-            <Button color="inherit">
-              <Link to="/work">
+            <Link 
+              to="/work"
+              className={classes.link}
+            >
+              <Button color="inherit">
                 Work
-              </Link>
-            </Button>
-            <Button color="inherit">
-              <Link to="/">
+              </Button>
+            </Link>
+            <Link 
+              to="/"
+              className={classes.link}
+            >
+              <Button color="inherit">
                 About
-              </Link>
-            </Button>
+              </Button>
+            </Link>
+            
           </div>
           <IconButton 
             edge="start" 
