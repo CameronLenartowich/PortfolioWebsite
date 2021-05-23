@@ -6,11 +6,13 @@ import {
 import Work from './Work'
 import About from './About'
 
-export default function Routes() {
+export default function Routes(props) {
     return (
         <Switch>
           <Route exact path="/">
-            <About />
+            <About
+              firebase={props.firebase}
+            />
           </Route>
           <Route exact path="/work">
             <Work />

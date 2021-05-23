@@ -9,6 +9,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
 import Container from '@material-ui/core/Container';
+import { Typography } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -20,6 +21,10 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.text.secondary,
     margin: theme.spacing(2)
   },
+  titleh1: {
+    marginTop: theme.spacing(2),
+    fontSize: '3.5em'
+  }
 }));
 
 export default function Work() {
@@ -28,6 +33,13 @@ export default function Work() {
   return (
     <div className={classes.root}>
       <Container maxWidth="lg">
+      <Typography 
+        variant="h1" 
+        gutterBottom
+        className={classes.titleh1}
+      >
+        Work
+      </Typography>
       <Paper className={classes.paper}>
         <h2>Hilton Worldwide Holdings</h2>
         <p>

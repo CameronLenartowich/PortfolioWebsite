@@ -17,13 +17,25 @@ const firebaseConfig = {
   appId: process.env.REACT_APP_APP_ID
 };
 firebase.initializeApp(firebaseConfig);
+/*
+//rules
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}
+*/
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Navbar/>
-        <Routes/>
+        <Routes
+          firebase={firebase}
+        />
       </div>
     </Router>
   );
