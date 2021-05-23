@@ -23,7 +23,20 @@ const useStyles = makeStyles((theme) => ({
   },
   titleh1: {
     marginTop: theme.spacing(2),
-    fontSize: '3.5em'
+    fontSize: '3.5em',
+    color: 'rgba(0, 0, 0, 0.6)',
+    textAlign: 'center'
+  },
+  titleh2: {
+    fontSize: '2.5em',
+    textAlign: 'left'
+  },
+  titleh3: {
+    fontSize: '1.5em',
+    textAlign: 'left'
+  },
+  bodyText: {
+    textAlign: 'left'
   }
 }));
 
@@ -41,17 +54,33 @@ export default function Work() {
         Work
       </Typography>
       <Paper className={classes.paper}>
-        <h2>Hilton Worldwide Holdings</h2>
-        <p>
+        <Typography
+          variant="h2"
+          gutterBottom
+          className={classes.titleh2}
+        >
+          Hilton Worldwide Holdings
+        </Typography>
+        <Typography
+          variant="body1"
+          gutterBottom
+          className={classes.bodyText}
+        >
           I currently work for Hilton Worldwide Holdings as a full-stack web developer.
           My role is to rebuild their legacy web applications with modern day technologies and clean code.
           The web applications are large in size of both data and amount of web pages.
           The web application's are available to employees only so the websites are innaccessed by the public network.
           Technologies that I use to build the web applications are:
-        </p>
+        </Typography>
         <Grid container spacing={3}>
         <Grid item xs={6}>
-        <h3>Front End</h3>
+        <Typography
+          variant="h3"
+          gutterBottom
+          className={classes.titleh3}
+        >
+          Front End
+        </Typography>
         <List component="nav" aria-label="secondary">
           <ListItem>
             <ListItemText primary="React.js" />
@@ -68,7 +97,13 @@ export default function Work() {
         </List>
         </Grid>
         <Grid item xs={6}>
-        <h3>Back End</h3>
+        <Typography
+          variant="h3"
+          gutterBottom
+          className={classes.titleh3}
+        >
+          Backend
+        </Typography>
         <List component="nav" aria-label="secondary">
           <ListItem>
             <ListItemText primary=".Net Core C#" />
@@ -91,10 +126,21 @@ export default function Work() {
       </Paper>
 
       <Paper className={classes.paper}>
-      <h2>Thinkful</h2>
-      <p>
-        Thinkful is one of the most prestigious coding school's in North America. I graduated from Thinkful in 2019. I built the following projects during my time there:
-      </p>
+        <Typography
+          variant="h2"
+          gutterBottom
+          className={classes.titleh2}
+        >
+          Thinkful
+        </Typography>
+      <Typography
+        variant="body1"
+        gutterBottom
+        className={classes.bodyText}
+      >
+        Thinkful is one of the most prestigious coding school's in North America. 
+        I graduated from Thinkful in 2019. I built the following projects during my time there:
+      </Typography>
       <Grid container spacing={3}>
         {
           work.thinkful.map((value, index) => (
@@ -118,11 +164,21 @@ export default function Work() {
       </Paper>
 
       <Paper className={classes.paper}>
-      <h2>Brookfield Septic</h2>
-      <p>
+        <Typography
+          variant="h2"
+          gutterBottom
+          className={classes.titleh2}
+        >
+          Brookfield Septic
+        </Typography>
+      <Typography
+        variant="body1"
+        gutterBottom
+        className={classes.bodyText}
+      >
         As a freelancer, I helped Brookfield Septic with building their online presence.
         This involved building both their website and social media profile.
-      </p>
+      </Typography>
       <Grid container spacing={3}>
         {
           work.brookfieldSeptic.map((value, index) => (

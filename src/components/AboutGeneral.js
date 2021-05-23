@@ -19,26 +19,38 @@ export default function AboutGeneral() {
   return (
     <div className={classes.root}>
           <Grid container spacing={3}>
-          <Grid item xs={6}>
-          <p>
+          <Grid item md={6}>
+          <Typography
+            variant="body1"
+            gutterBottom
+          >
             I'm a full-stack web developer and I currently work for Hilton Worlwide Holdings.
             I started working for Hilton in 2019 and I build large sized web applications for them.
             The applicaiton's register hotel information through forms that are used by employees only.
-          </p>
-          <p>
+          </Typography>
+          <Typography
+            variant="body1"
+            gutterBottom
+          >
             Prior to Hilton, I graduated from one of the highest rated coding schools in America.
             The school is named Thinkful and my program specialized in full-stack web development.
-          </p>
-          <p>
+          </Typography>
+          <Typography
+            variant="body1"
+            gutterBottom
+          >
             Other experience I have as a web developer includes freelancing building websites for small companies,
             taking programming courses on Udemy.com, and networking with other developers at meetups.
-          </p>
-          <p>
+          </Typography>
+          <Typography
+            variant="body1"
+            gutterBottom
+          >
             Technology interests that I have other then web development include smart contract development,
             cyber security, devops, and system configuration.
-          </p>
+          </Typography>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item md={6}>
           <img 
             src='../images/profilePhoto.jpg'
           />

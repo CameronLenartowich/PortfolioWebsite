@@ -14,7 +14,7 @@ import AboutContact from './AboutContact'
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
+    flexGrow: 1
   },
   paper: {
     padding: theme.spacing(2),
@@ -24,7 +24,13 @@ const useStyles = makeStyles((theme) => ({
   },
   titleh1: {
     marginTop: theme.spacing(2),
-    fontSize: '3.5em'
+    fontSize: '3.5em',
+    textAlign: 'center',
+    color: 'rgba(0, 0, 0, 0.6)'
+  },
+  titleh2: {
+    fontSize: '2.5em',
+    textAlign: 'left'
   }
 }));
 
@@ -49,12 +55,26 @@ export default function About() {
         <Paper
           className={classes.paper}
         >
+          <Typography
+            variant="h2"
+            gutterBottom
+            className={classes.titleh2}
+          >
+            Skills
+          </Typography>
           <AboutSkills />  
         </Paper>
 
         <Paper
           className={classes.paper}
         >
+          <Typography
+            variant="h2"
+            gutterBottom
+            className={classes.titleh2}
+          >
+            Contact
+          </Typography>
           <AboutContact/>
         </Paper>
 

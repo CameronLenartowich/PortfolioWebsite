@@ -10,7 +10,10 @@ import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({
-  
+  contactLink: {
+    color: 'rgba(0, 0, 0, 0.54)',
+    textDecoration: 'none'
+  }
 }));
 
 export default function AboutContact() {
@@ -35,24 +38,13 @@ export default function AboutContact() {
 
   return (
     <div className={classes.root}>
-          <h2>Contact</h2>
           <Grid container spacing={3}>
-            <Grid item xs={6}>
-              <List component="nav" aria-label="secondary">
-                <ListItem>
-                  <ListItemText primary="214-601-3811" />
-                </ListItem>
-                <ListItem>
-                  <ListItemText primary="camtl66@gmail.com" />
-                </ListItem>
-              </List>
-            </Grid>
-
             <Grid item xs={6}>
               <List component="nav" aria-label="secondary">
                 <a
                   href="https://www.linkedin.com/in/cameron-lenartowich-developer/"
                   target="_blank"
+                  className={classes.contactLink}
                 >
                   <ListItem button>
                     <ListItemText primary="LinkedIn" />
@@ -61,6 +53,7 @@ export default function AboutContact() {
                 <a
                   href="https://github.com/CameronLenartowich"
                   target="_blank"
+                  className={classes.contactLink}
                 >
                   <ListItem button>
                     <ListItemText primary="Github" />
@@ -69,11 +62,26 @@ export default function AboutContact() {
                 <a
                   href="https://www.instagram.com/cameronlenartowich/"
                   target="_blank"
+                  className={classes.contactLink}
                 >
                   <ListItem button>
                     <ListItemText primary="Instagram" />
                   </ListItem>
                 </a>
+              </List>
+            </Grid>
+
+            <Grid item xs={6}>
+              <List component="nav" aria-label="secondary">
+                <ListItem>
+                  <ListItemText primary="214-601-3811" />
+                </ListItem>
+                <ListItem>
+                  <ListItemText primary="camtl66@gmail.com" />
+                </ListItem>
+                <ListItem>
+                  <ListItemText primary="Charleston, SC" />
+                </ListItem>
               </List>
             </Grid>
           </Grid>

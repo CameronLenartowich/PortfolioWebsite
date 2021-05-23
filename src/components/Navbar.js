@@ -8,6 +8,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import './../styles/navbar.css'
 import {Link} from 'react-router-dom'
+import blue from '@material-ui/core/colors/blue';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -21,8 +22,12 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: theme.spacing(2)
   },
   link: {
-    color: 'white',
+    color: 'rgba(0, 0, 0, 0.6)',
     textDecoration: 'none'
+  },
+  appBar: {
+    backgroundColor: 'white',
+    color: 'rgba(0, 0, 0, 0.7)'
   }
 }));
 
@@ -31,7 +36,10 @@ export default function Navbar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar 
+        position="static"
+        className={classes.appBar}
+      >
         <Toolbar>
           <Typography 
             variant="h6" 
@@ -59,7 +67,7 @@ export default function Navbar() {
             </Link>
             
           </div>
-          <IconButton 
+          {/* <IconButton 
             edge="start" 
             className={classes.menuButton} 
             color="inherit" 
@@ -67,7 +75,7 @@ export default function Navbar() {
             id="smallNavMenu"
           >
             <MenuIcon />
-          </IconButton>
+          </IconButton> */}
         </Toolbar>
       </AppBar>
     </div>

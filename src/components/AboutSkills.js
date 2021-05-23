@@ -10,7 +10,10 @@ import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({
-  
+  titleh3: {
+    fontSize: '1.5em',
+    textAlign: 'left'
+  }
 }));
 
 export default function AboutSkills() {
@@ -18,10 +21,16 @@ export default function AboutSkills() {
 
   return (
     <div className={classes.root}>
-        <h2>Skills</h2>
           <Grid container spacing={3}>
-            <Grid item xs={6}>
-              <h3>Front End</h3>
+
+            <Grid item sm={6}>
+              <Typography
+                variant="h3" 
+                gutterBottom
+                className={classes.titleh3}
+              >
+                Front End
+              </Typography>
               <List component="nav" aria-label="secondary">
                 <ListItem>
                   <ListItemText primary="HTML" />
@@ -47,8 +56,14 @@ export default function AboutSkills() {
               </List>
             </Grid>
 
-            <Grid item xs={6}>
-              <h3>Backend End</h3>
+            <Grid item sm={6}>
+              <Typography
+                variant="h3" 
+                gutterBottom
+                className={classes.titleh3}
+              >
+                Backend End
+              </Typography>
               <List component="nav" aria-label="secondary">
                 <ListItem>
                   <ListItemText primary=".Net Core C#" />
@@ -76,8 +91,14 @@ export default function AboutSkills() {
           
 
           
-            <Grid item xs={6}>
-              <h3>Database Tools</h3>
+            <Grid item sm={6}>
+              <Typography
+                variant="h3" 
+                gutterBottom
+                className={classes.titleh3}
+              >
+                Database Tools
+              </Typography>
               <List component="nav" aria-label="secondary">
                 <ListItem>
                   <ListItemText primary="SQL" />
@@ -106,8 +127,14 @@ export default function AboutSkills() {
               </List>
             </Grid>
 
-            <Grid item xs={6}>
-              <h3>Development Workflow</h3>
+            <Grid item sm={6}>
+              <Typography
+                variant="h3" 
+                gutterBottom
+                className={classes.titleh3}
+              >
+                Development Workflow
+              </Typography>
               <List component="nav" aria-label="secondary">
                 <ListItem>
                   <ListItemText primary="Git Version Control" />
