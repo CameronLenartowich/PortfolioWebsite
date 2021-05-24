@@ -7,7 +7,6 @@ import '../styles/work.css'
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-import Divider from '@material-ui/core/Divider';
 import Container from '@material-ui/core/Container';
 import { Typography } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
@@ -50,7 +49,20 @@ const useStyles = makeStyles((theme) => ({
   websiteButton: {
     marginLeft: theme.spacing(2),
     marginRight: theme.spacing(2),
-    marginTop: theme.spacing(1),
+    marginTop: theme.spacing(1)
+  },
+  buttonContainer: {
+    display: 'flex',
+    justifyContent: 'left'
+  },
+  companyWebsiteButton: {
+    marginBottom: theme.spacing(2)
+  },
+  hiltonSkillsContainer: {
+    marginTop: theme.spacing(1)
+  },
+  workDescriptionContainer: {
+    marginTop: theme.spacing(1)
   }
 }));
 
@@ -75,6 +87,22 @@ export default function Work() {
         >
           Hilton Worldwide Holdings
         </Typography>
+        <div
+          className={classes.buttonContainer}
+        >
+        <a
+          href="https://www.hilton.com/en/corporate/"
+          className={classes.link}
+          target="_blank"
+        >
+        <Button 
+          variant="contained"
+          className={classes.companyWebsiteButton}
+        >
+          Company Website
+        </Button>
+        </a>
+        </div>
         <Typography
           variant="body1"
           gutterBottom
@@ -86,7 +114,11 @@ export default function Work() {
           The web application's are available to employees only so the websites are innaccessed by the public network.
           Technologies that I use to build the web applications are:
         </Typography>
-        <Grid container spacing={3}>
+        <Grid 
+          container 
+          spacing={3}
+          className={classes.hiltonSkillsContainer}
+        >
         <Grid item sm={6} xs={12}>
         <Typography
           variant="h3"
@@ -147,6 +179,22 @@ export default function Work() {
         >
           Thinkful
         </Typography>
+        <div
+          className={classes.buttonContainer}
+        >
+        <a
+          href="https://www.thinkful.com/bootcamp/web-development/"
+          className={classes.link}
+          target="_blank"
+        >
+        <Button 
+          variant="contained"
+          className={classes.companyWebsiteButton}
+        >
+          Program Website
+        </Button>
+        </a>
+        </div>
       <Typography
         variant="body1"
         gutterBottom
@@ -177,6 +225,9 @@ export default function Work() {
                     alt={value.name} 
                   />
                 </a>
+                <div
+                  className={classes.workDescriptionContainer}
+                >
                 <Typography
                     variant="body1"
                     gutterBottom
@@ -192,7 +243,7 @@ export default function Work() {
                     Technologies: {value.tools}
                   </Typography>
                   <div 
-                    className={classes.websiteButtonContainer}
+                    className={classes.buttonContainer}
                   >
                   <a
                     href={value.link}
@@ -219,6 +270,7 @@ export default function Work() {
                     </Button>
                   </a>
                   </div>
+                </div> 
               </Paper>
             </Grid>
           ))
@@ -264,6 +316,9 @@ export default function Work() {
                     alt={value.name} 
                   />
                 </a>
+                <div
+                  className={classes.workDescriptionContainer}
+                >
                 <Typography
                     variant="body1"
                     gutterBottom
@@ -278,6 +333,9 @@ export default function Work() {
                   >
                     Technologies: {value.tools}
                   </Typography>
+                  <div
+                    className={classes.buttonContainer}
+                  >
                   <a
                     href={value.link}
                     target="_blank"
@@ -290,6 +348,8 @@ export default function Work() {
                       Website
                     </Button>
                   </a>
+                  </div>
+                  </div>
               </Paper>
             </Grid>
           ))
