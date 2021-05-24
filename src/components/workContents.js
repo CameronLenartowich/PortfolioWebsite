@@ -51,14 +51,14 @@ export const work = {
     ],
     brookfieldSeptic: [
         {
-            name: 'Brookfield Septic Company Website',
+            name: 'Company Website',
             link: 'https://brookfieldsepticservice.com/',
             image: '../images/brookfield-septic-screenshot.png',
             tools: 'HTML, CSS, Bootstrap, Javascript, Homestead',
             description: 'Brookfield Septic company website. Displays information about the company such as services offered and contact information.'
         },
         {
-            name: 'Brookfield Septic Facebook Profile',
+            name: 'Facebook Profile',
             link: 'https://www.facebook.com/Brookfield-Septic-Service-180083506113565',
             image: '../images/brookfield-septic-facebook.png',
             tools: 'Facebook',

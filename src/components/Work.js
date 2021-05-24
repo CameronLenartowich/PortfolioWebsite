@@ -108,11 +108,9 @@ export default function Work() {
           gutterBottom
           className={classes.bodyText}
         >
-          I currently work for Hilton Worldwide Holdings as a full-stack web developer.
-          My role is to rebuild their legacy web applications with modern day technologies and clean code.
-          The web applications are large in size of both data and amount of web pages.
-          The web application's are available to employees only so the websites are innaccessed by the public network.
-          Technologies that I use to build the web applications are:
+          Currently work for Hilton Worldwide Holdings as a full-stack web developer.
+          The web application's worked on here are available to employees only and innaccessable by the public network.
+          Technologies used to rebuild the web applications are:
         </Typography>
         <Grid 
           container 
@@ -200,8 +198,9 @@ export default function Work() {
         gutterBottom
         className={classes.bodyText}
       >
-        Thinkful is one of the most prestigious coding school's in North America. 
-        I graduated from Thinkful in 2019. I built the following projects during my time there:
+        Thinkful is a highly rated coding school in North America. 
+        Graduated from Thinkful in 2019 as a software engineer. 
+        The following projects were built during the time there:
       </Typography>
       <Grid container spacing={3}>
         {
@@ -291,7 +290,7 @@ export default function Work() {
         gutterBottom
         className={classes.bodyText}
       >
-        As a freelancer, I helped Brookfield Septic with building their online presence.
+        As a freelancer, helped Brookfield Septic with building their online presence.
         This involved building both their website and social media profile.
       </Typography>
       <Grid container spacing={3}>

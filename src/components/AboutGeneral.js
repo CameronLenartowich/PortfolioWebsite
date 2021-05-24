@@ -1,12 +1,6 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
-import Container from '@material-ui/core/Container';
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({
@@ -19,8 +13,8 @@ const useStyles = makeStyles((theme) => ({
   profilePhoto: {
     width: '100%',
     height: '100%',
-    maxHeight: '600px',
-    maxWidth: '600px'
+    maxHeight: 'auto',
+    maxWidth: '500px'
   }
 }));
 
@@ -36,38 +30,42 @@ export default function AboutGeneral() {
             gutterBottom
             className={classes.bodyText}
           >
-            I'm a full-stack web developer and I currently work for Hilton Worlwide Holdings.
-            I started working for Hilton in 2019 and I build large sized web applications for them.
-            The applicaiton's register hotel information through forms that are used by employees only.
+            Full-stack web developer currently working for Hilton Worlwide Holdings.
+            Started working for Hilton in 2019 with the role of rebuilding large legacy web applications with modern technologies and clean code. 
+            The websites register hotel information through forms that are used by employees only.
+            This involves many web pages with lots of data that is processed.
+            Built the websites in React.js and .Net Core C# REST API's to serve its data.
+            Introduced and taught various new technologies to the department including React.js, REST API's, and Git Version Control.
           </Typography>
           <Typography
             variant="body1"
             gutterBottom
             className={classes.bodyText}
           >
-            Prior to Hilton, I graduated from one of the highest rated coding schools in America.
-            The school is named Thinkful and my program specialized in full-stack web development.
+            Prior to Hilton, graduated from a highly rated coding school named Thinkful as a Software Engineer.
+            Modern day technologies were learned here such as React.js, Google Firebase, Node.js with Express, and Object Relational Mapping. 
+            Good programming practices such as test driven development, agile, version control, algorithms, and data structures were also learned during the time there.
           </Typography>
           <Typography
             variant="body1"
             gutterBottom
             className={classes.bodyText}
           >
-            Other experience I have as a web developer includes freelancing building websites for small companies,
-            taking programming courses on Udemy.com, and networking with other developers at meetups.
+            Other experience as a web developer includes freelancing building websites for small companies,
+            taking programming courses on Udemy.com, and networking with other developers at technology meetups and presentations.
           </Typography>
-          <Typography
+          {/* <Typography
             variant="body1"
             gutterBottom
             className={classes.bodyText}
           >
-            Technology interests that I have other then web development include smart contract development,
-            cyber security, devops, and system configuration.
-          </Typography>
+            Technology interests other then web development include smart contract development, cyber security, devops, and system configuration.
+            Outside of I.T., enjoy's music, cars, economics, sports and outdoors.
+          </Typography> */}
           </Grid>
           <Grid item md={6} className={classes.profilePhotoContainer}>
               <img 
-                src='../images/IMG_1442_cropped.jpeg'
+                src='../images/IMG_1442.jpg'
                 className={classes.profilePhoto}
               />
           </Grid>
