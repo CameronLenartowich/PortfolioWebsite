@@ -30,11 +30,11 @@ export default function AboutGeneral() {
             gutterBottom
             className={classes.bodyText}
           >
-            Full-stack web developer currently working for Hilton Worlwide Holdings.
+            Full Stack web developer currently working for Hilton Worlwide Holdings.
             Started working for Hilton in 2019 with the role of rebuilding large legacy web applications with modern technologies and clean code. 
             The websites register hotel information through forms that are used by employees only.
             This involves many web pages with lots of data that is processed.
-            Built the websites in React.js and .Net Core C# REST API's to serve its data.
+            Building React.js websites and .Net Core C# REST API's.
             Introduced and taught various new technologies to the department including React.js, REST API's, and Git Version Control.
           </Typography>
           <Typography
@@ -65,7 +65,8 @@ export default function AboutGeneral() {
           </Grid>
           <Grid item md={6} className={classes.profilePhotoContainer}>
               <img 
-                src='../images/IMG_1442.jpg'
+                src='./../images/IMG_1442_copy_2.jpeg'
+                alt="Profile Picture"
                 className={classes.profilePhoto}
               />
           </Grid>

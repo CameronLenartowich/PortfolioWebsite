@@ -108,8 +108,8 @@ export default function Work() {
           gutterBottom
           className={classes.bodyText}
         >
-          Currently work for Hilton Worldwide Holdings as a full-stack web developer.
-          The web application's worked on here are available to employees only and innaccessable by the public network.
+          Currently works for Hilton Worldwide Holdings as a full stack web developer.
+          The web application's worked on here are available to employees only and inaccessable by the public network.
           Technologies used to rebuild the web applications are:
         </Typography>
         <Grid 
