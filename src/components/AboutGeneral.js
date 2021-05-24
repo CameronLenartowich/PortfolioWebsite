@@ -10,7 +10,16 @@ import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({
-  
+  bodyText: {
+    textAlign: 'left'
+  },
+  profilePhotoContainer: {
+    margin: 'auto'
+  },
+  profilePhoto: {
+    width: '100%',
+    height: '100%'
+  }
 }));
 
 export default function AboutGeneral() {
@@ -23,6 +32,7 @@ export default function AboutGeneral() {
           <Typography
             variant="body1"
             gutterBottom
+            className={classes.bodyText}
           >
             I'm a full-stack web developer and I currently work for Hilton Worlwide Holdings.
             I started working for Hilton in 2019 and I build large sized web applications for them.
@@ -31,6 +41,7 @@ export default function AboutGeneral() {
           <Typography
             variant="body1"
             gutterBottom
+            className={classes.bodyText}
           >
             Prior to Hilton, I graduated from one of the highest rated coding schools in America.
             The school is named Thinkful and my program specialized in full-stack web development.
@@ -38,6 +49,7 @@ export default function AboutGeneral() {
           <Typography
             variant="body1"
             gutterBottom
+            className={classes.bodyText}
           >
             Other experience I have as a web developer includes freelancing building websites for small companies,
             taking programming courses on Udemy.com, and networking with other developers at meetups.
@@ -45,15 +57,17 @@ export default function AboutGeneral() {
           <Typography
             variant="body1"
             gutterBottom
+            className={classes.bodyText}
           >
             Technology interests that I have other then web development include smart contract development,
             cyber security, devops, and system configuration.
           </Typography>
           </Grid>
-          <Grid item md={6}>
-          <img 
-            src='../images/profilePhoto.jpg'
-          />
+          <Grid item md={6} className={classes.profilePhotoContainer}>
+              <img 
+                src='../images/IMG_1442_cropped.jpeg'
+                className={classes.profilePhoto}
+              />
           </Grid>
           </Grid>
     </div>

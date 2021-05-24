@@ -10,6 +10,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
 import Container from '@material-ui/core/Container';
 import { Typography } from '@material-ui/core';
+import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -37,6 +38,19 @@ const useStyles = makeStyles((theme) => ({
   },
   bodyText: {
     textAlign: 'left'
+  },
+  workLabel: {
+    fontSize: '1.5em',
+    textAlign: 'left'
+  },
+  link: {
+    color: 'rgba(0, 0, 0, 0.5)',
+    textDecoration: 'none'
+  },
+  websiteButton: {
+    marginLeft: theme.spacing(2),
+    marginRight: theme.spacing(2),
+    marginTop: theme.spacing(1),
   }
 }));
 
@@ -46,13 +60,13 @@ export default function Work() {
   return (
     <div className={classes.root}>
       <Container maxWidth="lg">
-      <Typography 
+      {/* <Typography 
         variant="h1" 
         gutterBottom
         className={classes.titleh1}
       >
         Work
-      </Typography>
+      </Typography> */}
       <Paper className={classes.paper}>
         <Typography
           variant="h2"
@@ -73,7 +87,7 @@ export default function Work() {
           Technologies that I use to build the web applications are:
         </Typography>
         <Grid container spacing={3}>
-        <Grid item xs={6}>
+        <Grid item sm={6} xs={12}>
         <Typography
           variant="h3"
           gutterBottom
@@ -96,7 +110,7 @@ export default function Work() {
           </ListItem>
         </List>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item sm={6} xs={12}>
         <Typography
           variant="h3"
           gutterBottom
@@ -144,8 +158,15 @@ export default function Work() {
       <Grid container spacing={3}>
         {
           work.thinkful.map((value, index) => (
-            <Grid item xs={6} key={index}>
+            <Grid item sm={6} xs={12} key={index}>
               <Paper className={classes.paper}>
+                  <Typography
+                    variant="h6"
+                    gutterBottom
+                    className={classes.workLabel}
+                  >
+                    {value.name}
+                  </Typography>
                 <a 
                   href={value.link}
                   target="_blank"
@@ -153,9 +174,51 @@ export default function Work() {
                   <img 
                     className="workImage" 
                     src={value.image} 
-                    lt={value.name} 
+                    alt={value.name} 
                   />
                 </a>
+                <Typography
+                    variant="body1"
+                    gutterBottom
+                    className={classes.bodyText}
+                  >
+                    Description: {value.description}
+                  </Typography>
+                  <Typography
+                    variant="body1"
+                    gutterBottom
+                    className={classes.bodyText}
+                  >
+                    Technologies: {value.tools}
+                  </Typography>
+                  <div 
+                    className={classes.websiteButtonContainer}
+                  >
+                  <a
+                    href={value.link}
+                    target="_blank"
+                    className={classes.link}
+                  >
+                    <Button 
+                      variant="contained"
+                      className={classes.websiteButton}
+                    >
+                      Website
+                    </Button>
+                  </a>
+                  <a
+                    href={value.github}
+                    target="_blank"
+                    className={classes.link}
+                  >
+                    <Button 
+                      variant="contained"
+                      className={classes.websiteButton}
+                    >
+                      Github
+                    </Button>
+                  </a>
+                  </div>
               </Paper>
             </Grid>
           ))
@@ -182,8 +245,15 @@ export default function Work() {
       <Grid container spacing={3}>
         {
           work.brookfieldSeptic.map((value, index) => (
-            <Grid item xs={6} key={index}>
+            <Grid item sm={6} xs={12} key={index}>
               <Paper className={classes.paper}>
+                  <Typography
+                    variant="h6"
+                    gutterBottom
+                    className={classes.workLabel}
+                  >
+                    {value.name}
+                  </Typography>
                 <a 
                   href={value.link}
                   target="_blank"
@@ -191,9 +261,35 @@ export default function Work() {
                   <img 
                     className="workImage" 
                     src={value.image} 
-                    lt={value.name} 
+                    alt={value.name} 
                   />
                 </a>
+                <Typography
+                    variant="body1"
+                    gutterBottom
+                    className={classes.bodyText}
+                  >
+                    Description: {value.description}
+                  </Typography>
+                  <Typography
+                    variant="body1"
+                    gutterBottom
+                    className={classes.bodyText}
+                  >
+                    Technologies: {value.tools}
+                  </Typography>
+                  <a
+                    href={value.link}
+                    target="_blank"
+                    className={classes.link}
+                  >
+                    <Button 
+                      variant="contained"
+                      className={classes.websiteButton}
+                    >
+                      Website
+                    </Button>
+                  </a>
               </Paper>
             </Grid>
           ))

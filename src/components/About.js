@@ -40,13 +40,13 @@ export default function About() {
   return (
     <div className={classes.root}>
       <Container maxWidth="md">
-        <Typography 
+        {/* <Typography 
           variant="h1" 
           gutterBottom
           className={classes.titleh1}
         >
           About
-        </Typography>
+        </Typography> */}
         <Paper
           className={classes.paper}
         >

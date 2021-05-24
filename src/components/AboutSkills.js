@@ -23,7 +23,7 @@ export default function AboutSkills() {
     <div className={classes.root}>
           <Grid container spacing={3}>
 
-            <Grid item sm={6}>
+            <Grid item sm={6} xs={12}>
               <Typography
                 variant="h3" 
                 gutterBottom
@@ -56,7 +56,7 @@ export default function AboutSkills() {
               </List>
             </Grid>
 
-            <Grid item sm={6}>
+            <Grid item sm={6} xs={12}>
               <Typography
                 variant="h3" 
                 gutterBottom
@@ -91,7 +91,7 @@ export default function AboutSkills() {
           
 
           
-            <Grid item sm={6}>
+            <Grid item sm={6} xs={12}>
               <Typography
                 variant="h3" 
                 gutterBottom
@@ -127,7 +127,7 @@ export default function AboutSkills() {
               </List>
             </Grid>
 
-            <Grid item sm={6}>
+            <Grid item sm={6} xs={12}>
               <Typography
                 variant="h3" 
                 gutterBottom
