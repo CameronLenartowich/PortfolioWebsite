@@ -39,19 +39,6 @@ export default function AboutContact() {
   return (
     <div className={classes.root}>
           <Grid container spacing={3}>
-            <Grid item sm={6} xs={12}>
-              <List component="nav" aria-label="secondary">
-                <ListItem>
-                  <ListItemText primary="214-601-3811" />
-                </ListItem>
-                <ListItem>
-                  <ListItemText primary="camtl66@gmail.com" />
-                </ListItem>
-                <ListItem>
-                  <ListItemText primary="Charleston, SC" />
-                </ListItem>
-              </List>
-            </Grid>
 
             <Grid item sm={6} xs={12}>
               <List component="nav" aria-label="secondary">
@@ -70,7 +57,7 @@ export default function AboutContact() {
                   className={classes.contactLink}
                 >
                   <ListItem button>
-                    <ListItemText primary="Github (New)" />
+                    <ListItemText primary="Github" />
                   </ListItem>
                 </a>
                 <a
@@ -78,9 +65,6 @@ export default function AboutContact() {
                   target="_blank"
                   className={classes.contactLink}
                 >
-                  <ListItem button>
-                    <ListItemText primary="Github (Old)" />
-                  </ListItem>
                 </a>
                 <a
                   href="https://www.instagram.com/cameronlenartowich/"

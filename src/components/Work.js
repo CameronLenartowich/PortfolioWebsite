@@ -146,7 +146,7 @@ export default function Work() {
           gutterBottom
           className={classes.titleh3}
         >
-          Backend
+          Back End
         </Typography>
         <List component="nav" aria-label="secondary">
           <ListItem>
@@ -244,6 +244,8 @@ export default function Work() {
                   <div 
                     className={classes.buttonContainer}
                   >
+                  {  
+                    value.name != 'Wikipedia' && value.name != 'Destination Tracker' &&
                   <a
                     href={value.link}
                     target="_blank"
@@ -256,6 +258,7 @@ export default function Work() {
                       Website
                     </Button>
                   </a>
+                  }
                   <a
                     href={value.github}
                     target="_blank"

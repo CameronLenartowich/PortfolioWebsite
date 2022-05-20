@@ -1,14 +1,6 @@
 export const work = {
     thinkful: [
         {
-            name: 'Reddit',
-            link: 'https://shaggers-bloccit.herokuapp.com/',
-            image: '../images/bloccit-screenshot.png',
-            github: 'https://github.com/shaggers/bloccit',
-            tools: 'Node.js, Express, Sequelize, PostgreSQL, Jasmine, E.js, CSS, and Heroku.',
-            description: 'A replication of the website Reddit. Used for social news aggregation, web content rating, and discussion.'
-        },
-        {
             name: 'Chat Messenger',
             link: 'https://bloc-chat-messenger-dd4f6.firebaseapp.com/',
             image: '../images/bloc-chat-screenshot.png',
@@ -28,13 +20,21 @@ export const work = {
             name: 'Grocery List',
             link: 'https://grocery-list-1ed7b.firebaseapp.com/',
             image: '../images/grocery-list-screenshot.png',
-            github: 'https://github.com/shaggers/grocery-list',
+            github: 'https://github.com/CameronLenartowich/grocery-list-thinkful',
             tools: 'React.js, Google Firebase (NoSQL), CSS, and Bootstrap',
             description: 'A website that allows users to create multiple grocery lists that they can add and remove items from.'
         },
         {
+            name: 'Reddit',
+            link: 'https://www.linkedin.com/feed/update/urn:li:activity:6514345665315766272/',
+            image: '../images/bloccit-screenshot.png',
+            github: 'https://github.com/shaggers/bloccit',
+            tools: 'Node.js, Express, Sequelize, PostgreSQL, Jasmine, E.js, CSS, and Heroku.',
+            description: 'A replication of the website Reddit. Used for social news aggregation, web content rating, and discussion.'
+        },
+        {
             name: 'Wikipedia',
-            link: 'https://shaggers-bloccipedia-node.herokuapp.com/',
+            link: 'https://github.com/shaggers/bloccipedia-node',
             image: '../images/bloccipedia-screenshot.png',
             github: 'https://github.com/shaggers/bloccipedia-node',
             tools: 'Node.js, Express, Sequelize, PostgreSQL, Jasmine, E.js, CSS, and Heroku.',
@@ -42,7 +42,7 @@ export const work = {
         },
         {
             name: 'Destination Tracker',
-            link: 'https://shaggers-destination-tracker.herokuapp.com/',
+            link: 'https://github.com/shaggers/destination-tracker',
             image: '../images/destination-tracker-screenshot.png',
             github: 'https://github.com/shaggers/destination-tracker',
             tools: 'Node.js, Express, Sequelize, PostgreSQL, Jasmine, E.js, CSS, and Heroku.',
