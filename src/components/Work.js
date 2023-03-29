@@ -84,10 +84,8 @@ export default function Work() {
             Independant Consultant - Software Engineer
           </Typography>
           <Typography variant="body1" gutterBottom className={classes.bodyText}>
-            Currently works for Hilton Worldwide Holdings as a full stack web
-            developer. The web application's worked on here are available to
-            employees only and inaccessable by the public network. Technologies
-            used to rebuild the web applications are:
+            Built web applications for several clients that utilized ethereum
+            blockchain technology. Technologies used for this are:
           </Typography>
           <Grid container spacing={3} className={classes.hiltonSkillsContainer}>
             <Grid item sm={6} xs={12}>
@@ -196,10 +194,10 @@ export default function Work() {
             </a>
           </div>
           <Typography variant="body1" gutterBottom className={classes.bodyText}>
-            Currently works for Hilton Worldwide Holdings as a full stack web
-            developer. The web application's worked on here are available to
-            employees only and inaccessable by the public network. Technologies
-            used to rebuild the web applications are:
+            Worked for Hilton Worldwide Holdings as a full stack web developer.
+            The web application's worked on here are available to employees only
+            and inaccessable by the public network. Technologies used to rebuild
+            the web applications are:
           </Typography>
           <Grid container spacing={3} className={classes.hiltonSkillsContainer}>
             <Grid item sm={6} xs={12}>
